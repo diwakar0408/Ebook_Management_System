@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>register1</servlet-name>
+		<servlet-class>userservlet.com.registerservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register1</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>loginser</servlet-name>
+		<servlet-class>userservlet.com.loginservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginser</servlet-name>
+		<url-pattern>/loginurl</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>dkfsj</servlet-name>
+		<servlet-class>com.admin.servlets.addbook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dkfsj</servlet-name>
+		<url-pattern>/admin/bookurl</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>editbook</servlet-name>
+		<servlet-class>com.admin.servlets.EditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editbook</servlet-name>
+		<url-pattern>/admin/editurl</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>delete1</servlet-name>
+		<servlet-class>com.admin.servlets.DeleteServletClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete1</servlet-name>
+		<url-pattern>/admin/deleteservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>logout1</servlet-name>
+		<servlet-class>com.admin.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout1</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>logout2</servlet-name>
+		<servlet-class>com.admin.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout2</servlet-name>
+		<url-pattern>/Ebook-App/logout</url-pattern>
+	</servlet-mapping>
+	///cart realted servlet mapping
+	<servlet>
+		<servlet-name>addtocartservlet</servlet-name>
+		<servlet-class>userservlet.com.CartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addtocartservlet</servlet-name>
+		<url-pattern>/addtocart</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteservlet23</servlet-name>
+		<servlet-class>userservlet.com.Delete_Cart_Book</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteservlet23</servlet-name>
+		<url-pattern>/cartbookdelete</url-pattern>
+	</servlet-mapping>
+	///Order realted servlet mapping
+	<servlet>
+		<servlet-name>order12</servlet-name>
+		<servlet-class>userservlet.com.OrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>order12</servlet-name>
+		<url-pattern>/orderservleturl</url-pattern>
+	</servlet-mapping>
+</web-app>
